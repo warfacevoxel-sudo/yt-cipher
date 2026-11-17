@@ -19,8 +19,8 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: ytcipher.cr.cloud.ru
-          username: ${{ secrets.554f5ae2ae53746fe611b16c2beeb1c0  }}
-          password: ${{ secrets.2f79ba65faad55cf189effbdfe2199b5 }}
+          username: ${{ secrets.CLOUD_KEY_ID  }}
+          password: ${{ secrets.CLOUD_KEY_SECRET }}
 
       - name: Build and push
         uses: docker/build-push-action@v6
